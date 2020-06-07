@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1591204055 source:c:\users\user\documents\c_c++\all_shapes\main.c
+	<stdio.h>
+	<stdlib.h>
+
