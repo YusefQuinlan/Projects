@@ -15,4 +15,4 @@ when other players are nearby, this may give them enough time to be able to run 
 not get attacked by players who wish to kill them. So essentially they can kill monsters
 in the above mentioned away from screen/keyboard way without having to worry too much about
 being killed by players, as the plugin alerts the user of both players who can kill them
-and monster deaths.
+and monster deaths. Alerts can be turned on or off where needed.
