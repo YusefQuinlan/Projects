@@ -7,7 +7,7 @@ when there are a large number of items. The list items are strings that are equi
 the files in the directory from where the main file is run. If one selects a list item and then clicks the main
 button, then the selected file/song/music will be played wia winsound.
 
-The solution is far from perfect, some strange exception is trigger upon running this file, I have no
+The solution is far from perfect, some strange exception is triggered upon running this file, I have no
 idea what causes this exception as I do not know everything about the way tkinter (the gui implemented)
 is implemented. Another problem is that this only plays '.wav' files and that it only plays file that are
 in the directory that the python file is run from. 
