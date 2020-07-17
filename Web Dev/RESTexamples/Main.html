@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" charset="utf-8"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="Logic.js"></script>
+  </head>
+  <body>
+    <div class="RESTAPP">
+		<h1>REST API's</h1>
+		<div>
+		<label for="Search"><b>Search For a wikipedia page, that relates to a cat Breed. </b></label><br>
+		<label for="Search val"><b> Enter the catbreed you want the page for: </b></label>
+		<input type="text" id="catTerm"><br>
+		<button type="button" id="catButton" onclick="GetBreed()">Generate Wiki link below</button>
+		<p>The following link should be a link to the wiki article of the cat-breed, if the breed exists.</p>
+		<a id="CatLink" href="">aLink</a><br><br>
+		<p>API found at <a href="https://thecatapi.com/">https://thecatapi.com/ </a></p><br><br>
+		</div>
+		
+		<div>
+		<label for="BTC VAL"><b>The button below returns the current value of Bitcoin in USD</b></label><br>
+		<button type="button" id="btcButton" onclick="returnBtcVal()">The value of BTC in USD will be displayed below on-click</button>
+		<p id="btcprice">Value in USD: ?</p><br><br>
+		<p>API found at <a href="https://coinlib.io/api/v1/">https://coinlib.io/api/v1/</a></p><br><br>
+		</div>
+		
+		<div>
+		<label for="GetPoke"><b>Enter a pokemon name and find out what moves it has...</b></label><br>
+		<label for="pokeVal"><b>Enter the Pokemon Name: </b></label>
+		<input type="text" id="Pokename" ></input><br>
+		<button type="button" id="PokeButton" onclick="ReturnPokemon()">Find out what moves a pokemon has!</button><br><br>
+		<p id="PokeMoves">Pokemon ??? has the following moves: ???</p><br><br>
+		<p>API found at <a href="https://pokeapi.co/api/v2/pokemon/">https://pokeapi.co/api/v2/pokemon/</a></p><br><br>
+		
+		</div>
+	</div>
+  
+  </body>
+</html>
