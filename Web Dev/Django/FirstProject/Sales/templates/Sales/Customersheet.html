@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Customersheet</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'Main.css' %}">
+	</head>
+	<body>
+		{% block content %}
+		{% include 'Sales/Navigation.html'%}
+		<h1>Customer name: {{Customer.name}}</h1>
+		<h1>Phone number: {{Customer.phone}}</h1>
+		<h1>Email: {{Customer.email}}</h1>
+		<h1>Trusted for credit?: {{Customer.trustworthy}}</h1>
+		
+		{% endblock %}
+	</body>
+</html>

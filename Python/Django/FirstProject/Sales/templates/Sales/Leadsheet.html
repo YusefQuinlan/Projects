@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Leadsheet</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'Main.css' %}">
+	</head>
+	<body>
+		{% block content %}
+		{% include 'Sales/Navigation.html'%}
+		<h1>Lead name: {{Lead.name}}</h1>
+		<h1>Phone number: {{Lead.phone}}</h1>
+		<h1>Staff member we have an in with: {{Lead.staff_name}}</h1>
+		
+		{% endblock %}
+	</body>
+</html>

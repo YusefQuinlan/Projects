@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Productsheet</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'Main.css' %}">
+	</head>
+	<body>
+		{% block content %}
+		{% include 'Sales/Navigation.html'%}
+		<h1>Product: {{Product.name}}</h1>
+		<h1>Price: £{{Product.price}}</h1>
+		
+		{% endblock %}
+	</body>
+</html>

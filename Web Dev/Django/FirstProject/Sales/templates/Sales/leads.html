@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Leads</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'Main.css' %}">
+	</head>
+	<body>
+		{% block content %}
+		{% include 'Sales/Navigation.html'%}
+		<h1>Sales Leads</h1><br>
+		<table>
+		<tr>
+			<th>Company name</th>
+			<th>Company phone</th>
+			<th>Staff member interested</th>
+		</tr>
+		{% for i in Leads %}
+		<tr>
+			<td><a href="{% url 'Dy_Leads' i.id %}">{{i.name}}</a></td>
+			<td>{{i.phone}}</td>
+			<td>{{i.staff_name}}</td>
+		<tr>
+		{% endfor %}
+		</table>
+		{% endblock %}
+	</body>
+</html>

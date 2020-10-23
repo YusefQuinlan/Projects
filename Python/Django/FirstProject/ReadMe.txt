@@ -1,0 +1,2 @@
+This is the first Django project I have ever made and is rather basic as it does not include any CRUD.
+It may at some point include CRUD operations, but was mainly put together so that I could get a basic understanding of Django.

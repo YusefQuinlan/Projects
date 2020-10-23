@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Salesheet</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'Main.css' %}">
+	</head>
+	<body>
+		{% block content %}
+		{% include 'Sales/Navigation.html'%}
+		<h1>Sale: Order Number {{Sale.Number}}</h1>
+		<h1>Customer: {{Sale.Customer}}</h1>
+		<h1>Sale value: £{{Sale.Order_val}}</h1>
+		<h1>Sale status: {{Sale.status}}</h1>
+		
+		{% endblock %}
+	</body>
+</html>
